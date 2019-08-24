@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "jest --verbose",
-    "test:watch": "npm run test -- --watch"
-    
+    "test:watch": "npm run test -- --watch",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/seanpatches/momentous-frontend#readme",
   "dependencies": {
-    "angular": "^1.7.8"
+    "angular": "^1.2.32",
+    "angularjs": "0.0.1",
+    "http-server": "^0.11.1"
   }
 }
