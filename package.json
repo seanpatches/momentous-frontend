@@ -1,0 +1,28 @@
+{
+  "name": "momentous-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanpatches/momentous-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanpatches/momentous-frontend/issues"
+  },
+  "homepage": "https://github.com/seanpatches/momentous-frontend#readme",
+  "dependencies": {
+    "angular": "^1.7.8"
+  }
+}
