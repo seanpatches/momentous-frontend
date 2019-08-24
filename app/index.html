@@ -1,35 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="momentous">
+<html ng-app="momentousApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+  <script src="app.js"></script>
   <title>Momentous Coding</title>
 </head>
-<body ng-controller="mainController">
+<body ng-controller="userController">
   <h1>Momentous Code</h1>
 
-<div class="checkbox" ng-repeat="todo in todos"></div>
-  <label>
-    <input type="checkbox" ng-click="deleteUser(user._id)"> {{ user.text }}
-  </label>
-</div>
-
-  <div id="user-form" class="row">
-    <div class="col-sm-8 col-sm-offset-2 text-center">
-        <form>
-            <div class="form-group">
-
-                <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-                <input type="text" class="form-control input-lg text-center" placeholder="I want to buy a puppy that will love me forever" ng-model="formData.text">
-            </div>
-
-            <!-- createToDo() WILL CREATE NEW TODOS -->
-            <button type="submit" class="btn btn-primary btn-lg" ng-click="createUser()">Add</button>
-        </form>
-    </div>
-</div>
+  <ul>
+    <li ng-repeat="user in users">
+      <span>{{user.name}}</span>
+      <p>{{user.email}}</p>
+    </li>
+  </ul>
 
 </body>
 </html>
