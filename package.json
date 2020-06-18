@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/seanpatches/momentous-frontend#readme",
   "dependencies": {
-    "angular": "^1.2.32",
+    "angular": "^1.8.0",
     "angularjs": "0.0.1",
     "http-server": "^0.11.1"
   }
